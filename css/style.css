@@ -1,0 +1,396 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    color: black;
+    font-family: "Raleway", sans-serif;
+    background-color: #fc0
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c03;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none
+}
+
+ul {
+    list-style-type: none
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Vidaloka", serif
+}
+
+h1 {
+    font-size: 4em
+}
+
+h2 {
+    color: #c03;
+    font-weight: bold
+}
+
+h3 {
+    color: #c03
+}
+
+.container {
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 20px
+}
+
+.top_bottom_line {
+    background-color: #c03;
+    height: 20px;
+    width: 100%
+}
+
+.highlight {
+    background: linear-gradient(transparent 80%, #19d300 80%);
+    display: inline-block
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent)
+}
+
+header .hamburger {
+    font-size: 50px;
+    color: #c03
+}
+
+header .hamburger:after {
+    content: 'menu';
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Raleway", sans-serif
+}
+
+header .logo {
+    margin: 0px
+}
+
+header .nav_list {
+    font-size: 20px;
+    font-weight: bold
+}
+
+header .nav_list ul {
+    margin: auto
+}
+
+header .nav_list li {
+    margin: 0 10px
+}
+
+header .nav_list .nav-item a:hover {
+    background: linear-gradient(transparent 80%, #19d300 80%);
+    display: inline-block
+}
+
+footer .social_icons_container {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+    margin: 0 50px 30px 50px
+}
+
+footer .social_icons_container li {
+    text-align: center;
+    width: 55px;
+    height: 75px
+}
+
+footer .social_icons_container li i {
+    font-size: 50px;
+    color: dimgrey
+}
+
+footer .social_icons_container li i:hover {
+    color: #c03
+}
+
+footer .social_icons_container .twitter_icon:after {
+    content: 'twitter';
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Raleway", sans-serif
+}
+
+footer .social_icons_container .fb_icon:after {
+    content: 'facebook';
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Raleway", sans-serif
+}
+
+footer .social_icons_container .insta_icon:after {
+    content: 'instagram';
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Raleway", sans-serif
+}
+
+footer .footer_nav {
+    margin: 0 50px 30px 50px
+}
+
+footer .footer_nav li {
+    height: 45px
+}
+
+#index .main_image {
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3)
+}
+
+#index .main_image .carousel-item img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+#index .main_image .carousel-caption {
+    position: absolute;
+    top: 100px;
+    font-size: 60px;
+    text-shadow: 0px 0px 3px #000
+}
+
+#index .veckans_juice_index {
+    background-image: url("../img/veckans.jpg");
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    height: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#index .veckans_cap {
+    color: #c03;
+    background: rgba(255, 255, 255, 0.6);
+    width: 80vw;
+    padding: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px
+}
+
+#index .veckans_cap .button_basic {
+    background-color: #c03;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 10px auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px
+}
+
+#index .veckans_cap .button_basic:hover {
+    background-color: #19d300;
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px;
+    margin: 10px auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px
+}
+
+#index .index_menu_icons span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Raleway", sans-serif
+}
+
+#index .index_menu_icons img {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: block
+}
+
+#index .index_menu_icons .shake:hover {
+    -webkit-animation-name: iconShake;
+    animation-name: iconShake;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s
+}
+
+@keyframes iconShake {
+    15% {
+        -webkit-transform: translateX(3px) rotate(1deg);
+        -ms-transform: translateX(3px) rotate(1deg);
+        transform: translateX(3px) rotate(1deg)
+    }
+
+    30% {
+        -webkit-transform: translateX(-3px) rotate(-1deg);
+        -ms-transform: translateX(-3px) rotate(-1deg);
+        transform: translateX(-3px) rotate(-1deg)
+    }
+
+    45% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        -ms-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg)
+    }
+
+    60% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        -ms-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg)
+    }
+
+    75% {
+        -webkit-transform: translateX(1px) rotate(1deg);
+        -ms-transform: translateX(1px) rotate(1deg);
+        transform: translateX(1px) rotate(1deg)
+    }
+
+    90% {
+        -webkit-transform: translateX(-1px) rotate(-1deg);
+        -ms-transform: translateX(-1px) rotate(-1deg);
+        transform: translateX(-1px) rotate(-1deg)
+    }
+}
+
+#index .index_menu_icons p {
+    margin-top: 20px
+}
+
+.inner_main::before {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.inner_main_cap {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    position: absolute;
+    text-shadow: 0px 0px 3px #000
+}
+
+#vara_juicer .inner_main {
+    position: relative;
+    background-image: url("../img/main_varajuice.jpg");
+    margin: 0 auto;
+    text-align: center;
+    height: 250px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3)
+}
+
+#omelexir .inner_main {
+    position: relative;
+    background-image: url("../img/main_omelexir.jpg");
+    margin: 0 auto;
+    text-align: center;
+    height: 250px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3)
+}
+
+#omelexir .omelexir_foto img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+#butiker .inner_main {
+    position: relative;
+    background-image: url("../img/main_butiker.jpg");
+    margin: 0 auto;
+    text-align: center;
+    height: 250px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.3)
+}
+
+#butiker iframe {
+    width: 100%;
+    border-width: 0px;
+}
+
+@media screen and (min-width: 750px) {
+    main .main_image .carousel-item img {
+        height: 500px
+    }
+
+    main .main_image .carousel-caption {
+        top: 150px;
+        font-size: 80px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main .main_image .carousel-item img {
+        height: 600px
+    }
+
+    main .main_image .carousel-caption {
+        top: 150px;
+        font-size: 80px
+    }
+}

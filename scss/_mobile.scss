@@ -1,0 +1,309 @@
+/*borders for checking
+div{
+border: 1px dashed yellow;
+}
+
+nav, img, i, ul, li{
+border: 1px dashed pink;
+}
+
+main, aside, button{
+border: 1px dashed blue;
+}
+*/
+
+/*common*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body { height: 100%; }
+
+
+body{
+    color: black;
+    font-family: $body_family;
+    background-color: $company_color_y;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+
+    &:hover{
+        color: $company_color_p;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;    
+    }
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+h1,h2,h3{
+    font-family: $rubrik_family;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    color: $company_color_p;
+    font-weight: bold;
+}
+
+h3{
+    color: $company_color_p;
+}
+
+.container{
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 20px;
+}
+
+.top_bottom_line{
+    background-color: $company_color_p;
+    height: 20px;
+    width: 100%;
+}
+
+.highlight{
+    @include highlight_bg;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(#000, 0), rgba(#000, 0.75), rgba(#000, 0));
+}
+
+/*header*/
+header{    
+
+    .hamburger{
+        font-size: $FontAwesome_icon;
+        color: $company_color_p;
+
+    }
+
+    .hamburger:after {
+        content: 'menu';
+        @include iconText;
+    }
+
+    .logo{
+        margin: 0px;
+
+    }
+
+    .nav_list{
+        font-size: 20px;
+        font-weight: bold;
+
+        ul{
+            margin: auto;
+        }
+
+        li{
+            margin: 0 10px;           
+        }
+
+        .nav-item a:hover{
+            @include highlight_bg;
+        }
+    }
+}
+
+/*footer*/
+footer{
+    .social_icons_container{
+        box-shadow: $box_shadow_u;
+        margin: $margin_footer_container;
+
+        li{
+            text-align: center;
+            width: 55px;
+            height: 75px;
+
+            i{
+                font-size:$FontAwesome_icon;
+                color: dimgrey;
+
+                &:hover{
+                    color: $company_color_p;
+                }
+            }            
+        }
+
+        .twitter_icon:after {
+            content: 'twitter';
+            @include iconText;
+        }
+
+        .fb_icon:after {
+            content: 'facebook';
+            @include iconText;
+        }
+
+        .insta_icon:after {
+            content: 'instagram';
+            @include iconText;
+        }
+    }
+
+    .footer_nav{
+        margin:$margin_footer_container ;
+
+        li{
+            height: 45px;
+        }
+    }
+}
+
+/*index page*/
+
+#index{
+
+    .main_image{
+        box-shadow: $box_shadow;
+
+        .carousel-item img{
+            width: 100%;
+            height:400px    ;
+            -o-object-fit:cover;
+            object-fit:cover;
+        }
+
+        .carousel-caption{
+            position:absolute;
+            top:100px;
+            font-size: 60px;
+            text-shadow: $text_shadow;
+        }
+
+    }
+
+    .veckans_juice_index{
+        background-image: url("../img/veckans.jpg");
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        height: 400px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .veckans_cap{
+        color: $company_color_p;
+        background: rgba(#fff,0.6);
+        width: 80vw;
+        padding: 20px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;  
+
+        .button_basic{
+            @include buttonStyle($company_color_p, #fff);
+
+            &:hover{
+                @include buttonStyle_h($company_color_g,#000)
+                    }
+        }
+
+    }
+
+    .index_menu_icons{        
+
+        span{
+            @include iconText;            
+        }
+
+        img{
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            display: block;
+        }
+
+        .shake:hover{
+            -webkit-animation-name: iconShake;
+            animation-name: iconShake;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            //animation-timing-function: ease-in-out;
+        }
+
+        @keyframes iconShake{
+            15%{-webkit-transform: translateX(3px) rotate(1deg);-ms-transform: translateX(3px) rotate(1deg);transform: translateX(3px) rotate(1deg);}
+            30%{-webkit-transform: translateX(-3px) rotate(-1deg);-ms-transform: translateX(-3px) rotate(-1deg);transform: translateX(-3px) rotate(-1deg);}
+            45%{-webkit-transform: translateX(2px) rotate(1deg);-ms-transform: translateX(2px) rotate(1deg);transform: translateX(2px) rotate(1deg);}
+            60%{-webkit-transform: translateX(-2px) rotate(-1deg);-ms-transform: translateX(-2px) rotate(-1deg);transform: translateX(-2px) rotate(-1deg);}
+            75%{-webkit-transform: translateX(1px) rotate(1deg);-ms-transform: translateX(1px) rotate(1deg);transform: translateX(1px) rotate(1deg);}
+            90%{-webkit-transform: translateX(-1px) rotate(-1deg);-ms-transform: translateX(-1px) rotate(-1deg);transform: translateX(-1px) rotate(-1deg);}
+        }
+
+        p{
+            margin-top: 20px;
+        }
+
+    }
+}
+
+
+/*inner page main image*/
+.inner_main::before{
+    @include innerMainBgColor
+        }   
+
+.inner_main_cap{
+    @include innerMainBgCap
+        }
+
+#vara_juicer{
+
+    .inner_main{
+        @include innerMainBg("../img/main_varajuice.jpg")
+            }
+
+}
+
+#omelexir{
+
+    .inner_main{
+        @include innerMainBg("../img/main_omelexir.jpg")
+            }
+
+    .omelexir_foto img{
+        width: 100%;
+        height: 300px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+#butiker{
+
+    .inner_main{
+        @include innerMainBg("../img/main_butiker.jpg")
+            }
+
+    iframe{
+        width: 100%;
+        //frameborder: "0";
+        border-width: 0px;
+    }
+}
