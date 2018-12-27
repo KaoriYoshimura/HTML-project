@@ -1,2 +1,1 @@
-Kaori Yoshimura
-This is my first school assignment I created from design.
+This is my first HTML/CSS school assignment which I created with my own design idea.
