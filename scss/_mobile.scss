@@ -1,17 +1,3 @@
-/*borders for checking
-div{
-border: 1px dashed yellow;
-}
-
-nav, img, i, ul, li{
-border: 1px dashed pink;
-}
-
-main, aside, button{
-border: 1px dashed blue;
-}
-*/
-
 /*common*/
 *{
     margin: 0px;
@@ -114,9 +100,6 @@ header{
             margin: 0 10px;           
         }
 
-        .nav-item a:hover{
-            @include highlight_bg;
-        }
     }
 }
 
